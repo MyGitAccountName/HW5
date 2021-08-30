@@ -1,0 +1,98 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@font-face {
+    font-family: Mainfont;
+    src: url('fonts/CooperBlack_cyr.ttf');
+}
+
+body {
+    background-color: darkseagreen;
+}
+
+#error {
+    height: 100%;
+}
+
+#error body {
+    background: linear-gradient(30deg, #8f86cf, #c1a7c1, #8398c8) no-repeat;
+    overflow-y: hidden;
+    font-family: Mainfont, serif;
+}
+
+#error h1 {
+    font-size: 100px;
+    display: block;
+    text-align: center;
+    color: orangered;
+    margin-top: 50px;
+    text-shadow: 0 0 3px black, -2px 4px 8px #693dbc;
+}
+
+#anim {
+    display: flex;
+    position: relative;
+    min-width: 600px;
+    height: 600px;
+    margin: 50px 0;
+    background-color: #ffffff40;
+    box-shadow: 0 0 100px rgba(214, 70, 70, 0.3), inset 20px 0 30px #e0d2d2;
+}
+
+.box {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+    display: block;
+    height: 100%;
+    width: 184px;
+    background: linear-gradient(92deg, #948989 0, #c4c4c4 51%, #a2a0a0 90%, #d9d9d9 94%);
+}
+
+#picL {
+    z-index: 2;
+    position: absolute;
+    left: 0;
+}
+
+#picG {
+    z-index: 1;
+    position: absolute;
+    left: -400px;
+}
+
+
+.message {
+    position: absolute;
+    right: 15%;
+    text-align: center;
+}
+
+.number {
+    margin-top: 40px;
+    font-size: 200px;
+    color: orangered;
+    text-shadow: 0 0 10px black, 1px 0 7px #ffd034;
+    opacity: 0;
+}
+
+.text {
+    margin-top: 20px;
+    font: bold 65px Arial, serif;
+    color: #551a8b;
+    white-space: nowrap;
+    opacity: 0;
+}
+
+a {
+    display: block;
+    width: max-content;
+    margin: 0 auto;
+    padding: 10px 40px;
+    text-align: center;
+    font-size: 25px;
+}
+
